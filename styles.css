@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+.telajogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.informacoes{
+    display: flex;
+    gap: 20px;
+
+}
+
+canvas{
+    border: 1px solid #fff;
+    background-color: #000;
+}
+
+#pontuacao,#vidas{
+font-size: 18px;
+
+}
+
+
+
