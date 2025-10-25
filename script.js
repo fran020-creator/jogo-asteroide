@@ -35,12 +35,17 @@ document.getElementById("vidas").innerText = `Vidas: ${vidas}`
 
 
 function iniciarMusica() {
-    audio.loop = true; 
-    audio.play().catch(e=>{console.error("erro ao tentar tocar a musica",e)});
+    audio.loop = true;
 }
 
 document.addEventListener("keydown", teclaPressionada);
 document.addEventListener("keyup", teclaSolta);
+
+document.addEventListener("keydown", () => {
+  if (audio.paused) {
+    audio.play().catch(e => console.warn("Não foi possível tocar a música:", e));
+  }
+});
 
 function teclaPressionada(e) {
 
@@ -370,7 +375,7 @@ function desenhar() {
 
 
 
-iniciarMusica();
+
 criarAsteroids();
 
 setInterval(adicionarAsteroide, 5000);
