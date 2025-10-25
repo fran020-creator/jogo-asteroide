@@ -21,7 +21,7 @@ let pontuacao = 0;
 let vidas = 3;
 let ultimoTiro = 0;
 const intervaloEntreTiros=300;
-const audio = new Audio('./musica.mp3')
+const audio = new Audio('./musica/musica.mp3')
 const imagensAsteroides = [];
 
 for (let i = 1; i <= 6; i++) {
